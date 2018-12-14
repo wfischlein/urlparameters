@@ -1,10 +1,10 @@
 # Url-parameter Add-on for Vaadin 8
 
-${ComponentClassName} is a UI component add-on for Vaadin 8.
+This add-on for Vaadin 8 can be used to maintain states of views as url arguments in an easy way. The browser history as well as a kind of deep-link functioality where you can send links around between users of your site is maintained. All you need is setter methods for the argument values once you have configured your views and converters
 
 ## Online demo
 
-Try the add-on demo at <url of the online demo>
+There is no online demo available. Instead build the project and run the url-parameters-demo, click around, watch the URL, play with the browser history to see how it works
 
 ## Download release
 
@@ -22,33 +22,13 @@ To see the demo, navigate to http://localhost:8080/
 ## Development with Eclipse IDE
 
 For further development of this add-on, the following tool-chain is recommended:
-- Eclipse IDE
-- m2e wtp plug-in (install it from Eclipse Marketplace)
-- Vaadin Eclipse plug-in (install it from Eclipse Marketplace)
-- JRebel Eclipse plug-in (install it from Eclipse Marketplace)
-- Chrome browser
+- IntelliJ IDE
+- Browser of your choice
 
 ### Importing project
 
-Choose File > Import... > Existing Maven Projects
+Choose File > New > Project from existing source... > select the root directory and follow the wizzard to make it be an IntelliJ-maven-project
 
-Note that Eclipse may give "Plugin execution not covered by lifecycle configuration" errors for pom.xml. Use "Permanently mark goal resources in pom.xml as ignored in Eclipse build" quick-fix to mark these errors as permanently ignored in your project. Do not worry, the project still works fine. 
-
-### Debugging server-side
-
-If you have not already compiled the widgetset, do it now by running vaadin:install Maven target for url-parameters-root project.
-
-If you have a JRebel license, it makes on the fly code changes faster. Just add JRebel nature to your url-parameters-demo project by clicking project with right mouse button and choosing JRebel > Add JRebel Nature
-
-To debug project and make code modifications on the fly in the server-side, right-click the url-parameters-demo project and choose Debug As > Debug on Server. Navigate to http://localhost:8080/url-parameters-demo/ to see the application.
-
-### Debugging client-side
-
-Debugging client side code in the url-parameters-demo project:
-  - run "mvn vaadin:run-codeserver" on a separate console while the application is running
-  - activate Super Dev Mode in the debug window of the application or by adding ?superdevmode to the URL
-  - You can access Java-sources and set breakpoints inside Chrome if you enable source maps from inspector settings.
- 
 ## Release notes
 
 ### Version 0.1.0
@@ -56,9 +36,7 @@ Debugging client side code in the url-parameters-demo project:
 
 ## Roadmap
 
-This component is developed as a hobby with no public roadmap or any guarantees of upcoming releases. That said, the following features are planned for upcoming releases:
-- ...
-- ...
+This component is developed as a hobby with no public roadmap or any guarantees of upcoming releases. 
 
 ## Issue tracking
 
@@ -78,32 +56,4 @@ Contributions are welcome, but there are no guarantees that they are accepted as
 
 Add-on is distributed under Apache License 2.0. For license terms, see LICENSE.txt.
 
-MyComponent is written by <...>
-
-# Developer Guide
-
-## Getting started
-
-Here is a simple example on how to try out the add-on component:
-
-<...>
-
-For a more comprehensive example, see src/test/java/org/vaadin/template/demo/DemoUI.java
-
-## Features
-
-### Feature A
-
-<...>
-
-### Feature B
-
-<...>
-
-### Feature C
-
-<...>
-
-## API
-
-MyComponent JavaDoc is available online at <...>
+Url-parameter is written by Wolfgang Fischlein
