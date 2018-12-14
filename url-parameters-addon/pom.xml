@@ -131,7 +131,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.16.20</version>
+            <version>1.18.4</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -164,7 +164,7 @@
                             <!-- Package format version - do not change -->
                             <Vaadin-Package-Version>1</Vaadin-Package-Version>
                             <Vaadin-License-Title>${Vaadin-License-Title}</Vaadin-License-Title>
-                            <!--<Vaadin-Widgetsets>com.vaadin.wolfgang.WidgetSet</Vaadin-Widgetsets>-->
+                            <Vaadin-Widgetsets>com.vaadin.wolfgang.WidgetSet</Vaadin-Widgetsets>
                         </manifestEntries>
                     </archive>
                 </configuration>
