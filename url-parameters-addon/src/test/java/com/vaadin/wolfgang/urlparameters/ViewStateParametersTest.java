@@ -258,6 +258,7 @@ public class ViewStateParametersTest {
 	}
 
 	public static final class PropertyConverter implements Converter<Property> {
+		private Map<String, Property> map = new HashMap<>();
 
 		@Override
 		public Class<Property> getInternalClass() {
@@ -266,13 +267,19 @@ public class ViewStateParametersTest {
 
 		@Override
 		public Property getInternalObject(String stringRepresentation) {
+
 			if (STATIC_PROPERTY_STRING.equals(stringRepresentation)) {
 				return STATIC_PROPERTY;
 			}
 			if (StringUtils.isEmpty(stringRepresentation)) {
 				return null;
 			}
-			return new Property();
+			if (map.containsKey(stringRepresentation)) {
+				return map.get(stringRepresentation);
+			}
+			Property result = new Property();
+			getStringRepresentation(result);
+			return result;
 		}
 
 		@Override
@@ -280,7 +287,9 @@ public class ViewStateParametersTest {
 			if (o == STATIC_PROPERTY) {
 				return STATIC_PROPERTY_STRING;
 			}
-			return String.valueOf(o);
+			String result = String.valueOf(System.identityHashCode(o));
+			map.put(result, o);
+			return result;
 		}
 	}
 
