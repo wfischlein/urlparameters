@@ -12,7 +12,7 @@ Official releases of this add-on are available at Vaadin Directory. For Maven in
 
 ## Building and running demo
 
-git clone <url of the MyComponent repository>
+git clone git@github.com:wfischlein/urlparameters.git
 mvn clean install
 cd demo
 mvn jetty:run
