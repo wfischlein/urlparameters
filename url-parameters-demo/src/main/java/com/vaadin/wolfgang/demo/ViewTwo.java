@@ -27,9 +27,12 @@ public class ViewTwo extends VerticalLayout implements View {
 		});
 	}
 
+	// viewstate-setter method according to the '@ViewParameter' value
 	public void setSelectedValue(ValueObject valueObject) {
 		if (valueObject != null) {
 			grid.select(valueObject);
+		} else {
+			grid.deselectAll();
 		}
 	}
 }

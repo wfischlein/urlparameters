@@ -183,7 +183,7 @@ public class ViewStateParameters {
 				boolean valueChanged = viewStateParameter.setValue(element, currentView, initial);
 
 				if (valueChanged) {
-					updateUriFragment();
+					navigator.navigateTo(buildState(currentViewName, externalize()));
 				}
 				found = true;
 			}
@@ -201,7 +201,8 @@ public class ViewStateParameters {
 		if (currentPage != null) {
 			String state = StringUtils.defaultIfEmpty(currentPage.getUriFragment(), "");
 			String viewName = getViewName(state);
-			currentPage.setUriFragment(buildState(viewName, externalize()), false);
+			String newUriFragment = buildState(viewName, externalize());
+			currentPage.setUriFragment(newUriFragment, false);
 		}
 	}
 
