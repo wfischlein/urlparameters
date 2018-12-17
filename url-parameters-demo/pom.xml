@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.vaadin.wolfgang</groupId>
 	<artifactId>url-parameters-demo</artifactId>
 	<packaging>war</packaging>
 	<version>0.1.0</version>
-	<name>MyComponent Add-on Demo</name>
+	<name>Url Parameters Add-on Demo</name>
 
 	<prerequisites>
 		<maven>3</maven>
@@ -19,26 +19,24 @@
 		<vaadin.version>8.6.0</vaadin.version>
 		<vaadin.plugin.version>8.6.0</vaadin.plugin.version>
 		<jetty.plugin.version>9.4.7.v20170914</jetty.plugin.version>
+		<Implementation-Vendor>Wolfgang Fischlein</Implementation-Vendor>
 	</properties>
 
-    <!--
 	<organization>
-		<name>My Name</name>
-		<url>https://github.com/mygithubaccount/MyComponent/</url>
+		<name>Wolfgang Fischlein</name>
+		<url>https://github.com/wfischlein/urlparameters/</url>
 	</organization>
 
 	<scm>
-		<url>git://github.com/mygithubaccount/MyComponent.git</url>
-		<connection>scm:git:git://github.com/mygithubaccount/MyComponent.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com:/mygithubaccount/${componentClassName}.git</developerConnection>
-		<tag>MyComponent add-on for Vaadin</tag>
+		<url>git@github.com:wfischlein/urlparameters.git</url>
+		<connection>scm:git:git://github.com:wfischlein/urlparameters.git</connection>
+		<tag>url-parameter add-on for Vaadin</tag>
 	</scm>
 
 	<issueManagement>
 		<system>GitHub</system>
-		<url>https://github.com/mygithubaccount/MyComponent/issues</url>
+		<url>https://github.com/wfischlein/urlparameters/issues</url>
 	</issueManagement>
-    -->
 
 	<licenses>
 		<license>

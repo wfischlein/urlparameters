@@ -8,7 +8,7 @@ There is no online demo available. Instead build the project and run the url-par
 
 ## Download release
 
-Official releases of this add-on are available at Vaadin Directory. For Maven instructions, download and reviews, go to https://vaadin.com/addon/url-parameters
+Official releases of this add-on are available at Vaadin Directory. For Maven instructions, download and reviews, go to https://vaadin.com/directory/component/url-parameter-add-on
 
 ## Building and running demo
 

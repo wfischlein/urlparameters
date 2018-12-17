@@ -6,7 +6,7 @@
     <artifactId>url-parameters</artifactId>
     <packaging>jar</packaging>
     <version>0.1.0</version>
-    <name>MyComponent Add-on</name>
+    <name>Url Parameter Add-on</name>
 
     <prerequisites>
         <maven>3</maven>
@@ -28,24 +28,21 @@
         <Vaadin-Addon>${project.artifactId}-${project.version}.jar</Vaadin-Addon>
     </properties>
 
-    <!--
-	<organization>
-		<name>My Name</name>
-		<url>https://github.com/mygithubaccount/MyComponent/</url>
-	</organization>
+    <organization>
+        <name>Wolfgang Fischlein</name>
+        <url>https://github.com/wfischlein/urlparameters/</url>
+    </organization>
 
-	<scm>
-		<url>git://github.com/mygithubaccount/MyComponent.git</url>
-		<connection>scm:git:git://github.com/mygithubaccount/MyComponent.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com:/mygithubaccount/${componentClassName}.git</developerConnection>
-		<tag>MyComponent add-on for Vaadin</tag>
-	</scm>
+    <scm>
+        <url>git@github.com:wfischlein/urlparameters.git</url>
+        <connection>scm:git:git://github.com:wfischlein/urlparameters.git</connection>
+        <tag>url-parameter add-on for Vaadin</tag>
+    </scm>
 
-	<issueManagement>
-		<system>GitHub</system>
-		<url>https://github.com/mygithubaccount/MyComponent/issues</url>
-	</issueManagement>
-    -->
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/wfischlein/urlparameters/issues</url>
+    </issueManagement>
 
     <licenses>
         <license>

@@ -6,7 +6,7 @@
 	<artifactId>url-parameters-root</artifactId>
 	<packaging>pom</packaging>
 	<version>0.1.0</version>
-	<name>MyComponent Add-on Root Project</name>
+	<name>Url Parameters Add-on Root Project</name>
 
 	<prerequisites>
 		<maven>3</maven>
