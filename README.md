@@ -19,10 +19,10 @@ mvn jetty:run
 
 To see the demo, navigate to http://localhost:8080/
 
-## Development with Eclipse IDE
+## Development with IDE
 
 For further development of this add-on, the following tool-chain is recommended:
-- IntelliJ IDE
+- IDE of your choice
 - Browser of your choice
 
 ### Importing project
